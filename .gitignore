@@ -25,3 +25,31 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# Ignore local config files.
+config/unicorn.development.rb
+config/initializers/localhost.rb
+
+# Ignore sensitive config files.
+config/database.yml
+config/secrets.yml
+config/certs
+
+# Ignore databases
+*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+log
+tmp
+public/brakeman.html
+config/brakeman.ignore
+
+#Ignore RubyMine junk
+../.idea/*.*
+../.idea/
+.idea
+.keep
+*~
+*swp
+.DS_Store
+
