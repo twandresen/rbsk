@@ -27,6 +27,20 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# browser gem detects browser info and mobile
+gem 'browser', '0.6.0'
+
+# content scrubber
+gem 'sanitize', '3.0.0'
+
+# oj allows fast json rendering
+gem 'oj' #, '~>2.8'
+
+# Use LESS for stylesheets
+#gem 'less-rails', '~> 2.8.0'
+gem 'less-rails-bootstrap'
+
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
 
 # Use ActiveStorage variant
@@ -44,6 +58,26 @@ group :development, :test do
 end
 
 group :development do
+
+	gem 'better_errors'
+	gem 'binding_of_caller'
+
+  # meta_request enable use of rails_panel which
+  # is a chrome browser extension that shows request
+  # information in the chrome developer toolbar
+  gem 'meta_request'
+
+  # supresses annoying asset requests from the log...
+  #gem 'quiet_assets'
+
+  # pry gives us awesome console stuff with debugging tools...
+  #gem 'pry'
+  #gem 'pry-rails'
+  #gem 'pry-nav'
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'

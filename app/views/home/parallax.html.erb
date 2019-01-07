@@ -1,0 +1,187 @@
+<div class="global-header">
+	<div id="global-header-inner" class="global-header-inner">
+		<div id="header-wrapper" class="header-wrapper">
+			<div id="header-logo" class="header-logo">
+				<%= link_to root_path do %>
+					<%= image_tag "https://s3.us-east-2.amazonaws.com/rbsk/transparent-rbsk-law-logo-light-backgrounds.png", class: "" %>
+				<% end %>
+			</div>
+
+
+
+
+			<div id="main-menu" class="main-menu">
+				<ul role="menu" class="navigation-list">
+					<li class="navigation-item"><%= link_to "Home".upcase, root_path %></li> 
+					<li class="navigation-item"><%= link_to "About".upcase, root_path %></li> 
+					<li class="navigation-item"><%= link_to "Who We Serve".upcase, root_path %></li> 
+					<li class="navigation-item"><%= link_to "Services We Provide".upcase, root_path %></li> 
+					<li class="navigation-item"><%= link_to "Contact Us".upcase, root_path %></li> 
+					<li class="navigation-item"><%= link_to "Terms & Definitions".upcase, root_path %></li> 
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+<div class="main-body">
+
+	<div class="hero">
+  	<div class="caption">
+			<p>
+			<%= image_tag "https://s3.us-east-2.amazonaws.com/rbsk/transparent-rbsk-law-logo-white.png", class: "", style: "height:200px;" %>
+			<br>
+  		<span class="border">READY | BEAULIEU | SAUNDERS | KOSTIN</span>
+			</p>
+  	</div>
+
+		<div class="hero-callout">
+			<h2>Reliable. Dependable. Trusted.</h2>
+			<p> At the law offices of Matthew H. Beaulieu, our clients come first. With over 20 years of experience, our clients include over 15 large hospitals in Eastern MA. We have dealt with settling multi-million dollar Will contests, resolved contested trusts, cases involving end of life issues and thousands of cases to protect the injured and disabled.  
+			</p>
+
+			<p>
+			<br>
+			<%= link_to "Contact Us", root_path, class: "button" %>
+			</p>
+
+		</div>
+
+	</div>
+
+	<div style="margin:260px 100px 100px 100px;">
+
+		<div class="row">
+			<div class="col-md-6">
+				<div style="width:40%;background-color: #efe3c7;padding:20px 30px;font-weight:bold;font-size:16px;color:#aa8330">
+					<span>//&nbsp;&nbsp;SOME STUFF</span>
+				</div>
+				<div style="width:80%;">
+					<h1 style="font-size:48px;color:#9d792c">What Do We Offer?</h1>
+					<p style="font-size:16px;line-height:24px;">
+Need assistance with real estate, probate litigation, guardianship/conservatorship or fiduciary services? Worry not, our team of dedicated staff is there to cover any issues or concerns you may have.  Navigate through the list of services we provide to discover what best suits your needs. 
+					</p>
+					<p>
+						<%= link_to "Learn More", root_path, class: "button" %>
+					</p>
+	
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<%= image_tag "https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/terms_definitions_rbsk_law.jpg", class: "", style: "width:100%" %>
+			</div>
+
+		</div>
+
+	</div>
+
+
+
+
+
+<div style="color: #777;background-color:#f0f0f0;text-align:center;padding:50px 80px;text-align: justify;">
+  <h1 style="text-align:center;font-size:48px;color:#9d792c">About Us</h1>
+  <p>
+
+	!!!!!!!!!! HERE YOU'LL WANT TO PUT ALL 4 PARTNERS IN THEIR OWN BOX !!!!!!!
+
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<% content_for :scripts do %>
+  <script type="text/javascript">
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+  		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      	document.getElementById('global-header-inner').classList.add("smaller");
+      	document.getElementById('header-wrapper').classList.add("smaller");
+      	document.getElementById('header-logo').classList.add("smaller");
+      	document.getElementById('main-menu').classList.add("smaller");
+  		} else {
+      	document.getElementById('global-header-inner').classList.remove("smaller");
+      	document.getElementById('header-wrapper').classList.remove("smaller");
+      	document.getElementById('header-logo').classList.remove("smaller");
+      	document.getElementById('main-menu').classList.remove("smaller");
+
+  		}
+		}
+
+
+  </script>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
