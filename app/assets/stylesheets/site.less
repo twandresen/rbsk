@@ -1,5 +1,6 @@
 @import "vars";
 @import "mixins";
+@import "site/elusive-webfont";
 @import "menus";
 
 body	{
@@ -173,12 +174,17 @@ body	{
 
 
 		.hero-callout {
-    	top: 53%;
+    	top: 55%;
     	box-shadow: 5px 10px 20px -7px rgba(26,26,26,.4);
-    	left: 50%;
     	position: absolute;
-    	-webkit-transform: translate3d(-50%,50%,0);
-    	transform: translate3d(-50%,50%,0);
+    	//-webkit-transform: translate3d(-50%,50%,0);
+    	//transform: translate3d(-50%,50%,0);
+			//margin: 0px auto;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			//backface-visibility: hidden;
     	width: 60%;
     	background-color: #f0f0f0;
     	background-size: 100%;
@@ -232,6 +238,20 @@ body	{
         text-transform: uppercase;
         transition-property: color,background-color,border-color;
         text-decoration: none;
+
+				&:after {
+      .icon-style();
+      content: "\e71e";
+      display:inline-block;
+      margin-right: 5px;
+      margin-left: 5px;
+      position: relative;
+      top: 2px;
+      font-size:18px;
+      color: #fff;
+
+				}
+
       }
 
       .button-dark {
