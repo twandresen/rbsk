@@ -1,3 +1,28 @@
+<style>
+
+.header .top-nav .navbar-nav > li > a {
+	font-size: 16px;
+}
+.header .top-nav .navbar-nav > li > a:hover {
+    padding: 10px 8px;
+    color: #ca9f43;
+		background-color: #fff;
+}
+.header .top-nav .navbar-nav > li.active > a:after, .header .top-nav .navbar-nav > li.active > a:hover:after {
+    border-bottom: solid 2px #ca9f43 !important;
+}
+.top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
+    border-bottom: solid 2px #ca9f43 !important;
+}
+.top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
+    border-bottom: solid 2px #ca9f43 !important;
+}
+.header .top-nav .navbar-nav > li > a:hover:after {
+    border-bottom: solid 2px #ca9f43;
+}
+</style>
+
+<div class="header hidden-sm hidden-xs" style="text-align:right; padding:0px;">
 <div class="global-header">
 	<div id="global-header-inner" class="global-header-inner">
 		<div id="header-wrapper" class="header-wrapper">
@@ -7,23 +32,32 @@
 				<% end %>
 			</div>
 
-
-
-
-			<div id="main-menu" class="main-menu">
+			<!--div id="main-menu" class="main-menu">
 				<ul role="menu" class="navigation-list">
 					<li class="navigation-item"><%= link_to "Home".upcase, root_path %></li> 
 					<li class="navigation-item"><%= link_to "About".upcase, root_path %></li> 
-					<li class="navigation-item"><%= link_to "Who We Serve".upcase, root_path %></li> 
-					<li class="navigation-item"><%= link_to "Services We Provide".upcase, root_path %></li> 
-					<li class="navigation-item"><%= link_to "Contact Us".upcase, root_path %></li> 
+					<li class="navigation-item"><%= link_to "Our Services".upcase, root_path %></li> 
 					<li class="navigation-item"><%= link_to "Terms & Definitions".upcase, root_path %></li> 
+					<li class="navigation-item"><%= link_to "Contact Us".upcase, root_path %></li> 
 				</ul>
-			</div>
+			</div-->
+
+    <div id="top-nav" class="top-nav navbar" style="margin:0px auto;padding-right:40px;">
+      <ul class="nav navbar-nav" style="">
+          <li class=" active  "> <a href="/clients">Home</a> </li>
+          <li class="  "> <a href="/clients">About</a> </li>
+          <li class="  "> <a href="/clients">Services</a> </li>
+          <li class="  "> <a href="/clients">Contact Us</a> </li>
+          <li class="  "> <a href="/clients">Terms & Definitions</a> </li>
+      </ul>
+    </div>
+
 
 
 		</div>
 	</div>
+</div>
+
 </div>
 
 <div class="main-body">
@@ -53,12 +87,12 @@
 
 	</div>
 
-	<div style="margin:160px 100px 100px 100px;">
+	<div style="margin:200px 100px 100px 100px;">
 
 		<div class="row">
 			<div class="col-md-6">
-				<div style="width:40%;background-color: #efe3c7;padding:20px 30px;font-weight:bold;font-size:16px;color:#aa8330">
-					<span>//&nbsp;&nbsp;WHO WE SERVE</span>
+				<div class="parallelogram" style="width:40%;background-color: #efe3c7;padding:20px 30px;font-weight:bold;font-size:16px;color:#aa8330">
+					<span>WHO WE SERVE</span>
 				</div>
 				<div style="width:80%;">
 					<h1 style="font-size:48px;color:#9d792c">How Can We Help?</h1>
@@ -109,8 +143,6 @@ In need of legal assistance? Look no further. Our team of dedicated employees ar
 	
     </div>
 
-
-
     
   </div>
 </div>
@@ -129,24 +161,77 @@ In need of legal assistance? Look no further. Our team of dedicated employees ar
   </div>
 </div>
 
-<div style="position:relative;">
+<!--div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
   <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   </div>
+</div-->
+
+<div class="footer-wrap">
+	<div class="footer-nav">
+		<div><h3><%= link_to "About RBSK Law", root_path %></h3>
+			<div><%= link_to "Testimonials", root_path %></div>
+			<div><%= link_to "Our Team", root_path %></div>
+			<div><%= link_to "Matthew Beaulieu", root_path %></div>
+			<div><%= link_to "Heidi Kostin", root_path %></div>
+			<div><%= link_to "Richard Ready", root_path %></div>
+			<div><%= link_to "Brandon Saunders", root_path %></div>
+		</div>
+
+    <div><h3><%= link_to "Who We Serve", root_path %></h3>
+      <div><%= link_to "Attorneys", root_path %></div>
+      <div><%= link_to "Health Care Providers", root_path %></div>
+      <div><%= link_to "Families", root_path %></div>
+      <div><%= link_to "New Adults", root_path %></div>
+      <div><%= link_to "Seniors", root_path %></div>
+      <div><%= link_to "Service Members", root_path %></div>
+    </div>
+
+    <div><h3><%= link_to "Services We Provide", root_path %></h3>
+      <div><%= link_to "Real Estate", root_path %></div>
+      <div><%= link_to "Probate Litigation", root_path %></div>
+      <div><%= link_to "Guardianship & Conservatorship", root_path %></div>
+      <div><%= link_to "Trusts", root_path %></div>
+      <div><%= link_to "Fiduciary Services", root_path %></div>
+      <div><%= link_to "Personal Injury", root_path %></div>
+      <div><%= link_to "Civil Litigation", root_path %></div>
+      <div><%= link_to "Mental Health Litigation", root_path %></div>
+      <div><%= link_to "Estate Planning & Elder Law", root_path %></div>
+    </div>
+
+    <div><h3><%= link_to "Contact Us", root_path %></h3>
+      <div><%= link_to "Terms", root_path %></div>
+      <div><%= link_to "Definitions", root_path %></div>
+      <div><%= link_to "News & Updates", root_path %></div>
+    </div>
+
+	</div>
+
+		<div class="social-links">
+			<a href="https://twitter.com/careerarc" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_tw.png" alt="Twitter">
+      </a>
+
+			<a href="https://www.facebook.com/careerarc" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_fb.png" alt="Facebook">
+      </a>
+
+			<a href="https://www.glassdoor.com/Reviews/CareerArc-Reviews-E908244.htm" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_glassdoor.png" alt="Glassdoor">
+      </a>
+
+			<a href="https://www.linkedin.com/company/careerarc" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_li.png" alt="LinkedIn">
+      </a>
+		</div>
+
+		<div>
+      © 2019 RBSK Law |  All rights reserved
+    </div>
+
+
+
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -173,11 +258,13 @@ In need of legal assistance? Look no further. Our team of dedicated employees ar
 
 		function scrollFunction() {
   		if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      	document.getElementById('top-nav').classList.add("smaller");
       	document.getElementById('global-header-inner').classList.add("smaller");
       	document.getElementById('header-wrapper').classList.add("smaller");
       	document.getElementById('header-logo').classList.add("smaller");
       	document.getElementById('main-menu').classList.add("smaller");
   		} else {
+      	document.getElementById('top-nav').classList.remove("smaller");
       	document.getElementById('global-header-inner').classList.remove("smaller");
       	document.getElementById('header-wrapper').classList.remove("smaller");
       	document.getElementById('header-logo').classList.remove("smaller");
