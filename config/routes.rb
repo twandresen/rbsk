@@ -2,9 +2,8 @@ Rails.application.routes.draw do
 	root "home#index"
 
 	get "traditional" => "home#traditional"
-	get "clone" => "home#clone"
-	get "parallax" => "home#parallax"
-	get "modified" => "home#modified"
+	get "modern" => "home#modern"
+	get "visual" => "home#visual"
 	get "css" => "home#css"
 
 end
