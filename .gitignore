@@ -53,3 +53,4 @@ config/brakeman.ignore
 *swp
 .DS_Store
 
+config/database.yml\nconfig/secrets.yml
