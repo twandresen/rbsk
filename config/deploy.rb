@@ -17,6 +17,8 @@ set :rbenv_path, '/home/tom/.rbenv/'
 append :linked_files, "config/database.yml", "config/secrets.yml", "config/master.key"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
+set :passenger_restart_with_touch, false
+
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
