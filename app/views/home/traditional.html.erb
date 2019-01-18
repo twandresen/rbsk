@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<link href="https://fonts.googleapis.com/css?family=Oswald|Spectral" rel="stylesheet">
+  
 <head>
 
   <title>RBSK Law</title>
@@ -17,24 +18,24 @@
 .header .top-nav .navbar-nav > li > a {
   font-size: 20px;
 	color: #000;
-	font-family: 'Lato','Helvetica Neue',Helvetica,Arial,sans-serif !important;
+	font-family: 'Oswald','Lato','Helvetica Neue',Helvetica,Arial,sans-serif !important;
 }
 .header .top-nav .navbar-nav > li > a:hover {
     padding: 10px 8px;
-    color: #7f291a;
+    color: #cc1100;
     background-color: #fff;
 }
 .header .top-nav .navbar-nav > li.active > a:after, .header .top-nav .navbar-nav > li.active > a:hover:after {
-    border-bottom: solid 2px #7f291a !important;
+    border-bottom: solid 2px #cc1100 !important;
 }
 .top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
-    border-bottom: solid 2px #7f291a !important;
+    border-bottom: solid 2px #cc1100 !important;
 }
 .top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
-    border-bottom: solid 2px #7f291a !important;
+    border-bottom: solid 2px #cc1100 !important;
 }
 .header .top-nav .navbar-nav > li > a:hover:after {
-    border-bottom: solid 2px #7f291a;
+    border-bottom: solid 2px #cc1100;
 }
 
 .footer-wrap {
@@ -93,7 +94,7 @@ h3 {
           <li class="  "> <a href="/clients">About</a> </li>
           <li class="  "> <a href="/clients">Services</a> </li>
           <li class="  "> <a href="/clients">Contact Us</a> </li>
-          <li class="  "> <a href="/clients">Terms & Definitions</a> </li>
+          <!--li class="  "> <a href="/clients">Terms & Definitions</a> </li-->
       </ul>
     </div>
 
@@ -118,13 +119,16 @@ h3 {
 
 	</div-->
 
-  <div class="hero" style="max-height:400px;">
-      <div class="caption" style="top:250px !important;">
+  <div class="hero" style="max-height:340px;">
+      <div class="caption" style="top:300px !important;">
       <p>
-      <%= image_tag "https://s3.us-east-2.amazonaws.com/rbsk/ready_beaulieu_saunders_and_kostin_red.png", class: "", style: "height:80px;" %>
-			<h3>RELIABLE. DEPENDABLE. TRUSTED.</h3>
-	<div style="padding-top:50px;font-size:16px;line-height:24px !important;max-width:900px;text-align:center !important;margin: 0 auto !important;">
-At RBSK Law Offices, our clients come first. With over 20 years of experience, our clients include more than 15 large hospitals in Eastern MA. Our experience includes settling multi-million dollar will contests, resolving contested trusts, cases involving end of life issues and thousands of other cases with the goal of protecting the injured and disabled. With expertise in a variety of practice areas our team of dedicated attorneys is available to offer assistance to individuals as well as organizations.
+      <%= image_tag "https://s3.us-east-2.amazonaws.com/rbsk/RBSK_NameBanner_lightbg.png", class: "", style: "height:100px;" %>
+			<h3 style="color:#303030 !important;font-family:Spectral !important;font-size:28px !important;">RELIABLE. DEPENDABLE. TRUSTED.</h3>
+			<!--div style="padding-top:140px;font-size:16px;line-height:24px !important;max-width:900px;text-align:center !important;margin: 0 auto !important;"-->
+			<div class="hero-callout-traditional">
+			  <p style="font-family:Spectral !important;font-size:22px;">
+			    At RBSK Law Offices, our clients come first.</p>
+			  <p style="font-family:Spectral !important;font-size:18px;">With over 20 years of experience, our clients include more than 15 large hospitals in Eastern Massachusetts. Our team of dedicated attorneys offers assistance to individuals as well as organizations in a wide variety of practice areas.</p>
 </div>
 
 
@@ -140,21 +144,22 @@ At RBSK Law Offices, our clients come first. With over 20 years of experience, o
 
 			<div class="row" style="margin:0px 20px;">
 				<div class="col-md-4" style="height:100%;text-align:center;">
-					<div style="margin:20px;background:#fff;min-height:300px;">
-						<img src="https://s3.us-east-2.amazonaws.com/rbsk/images/article_banner.jpg" style="width:100%;">
+					<div style="margin:20px;background:#fff;min-height:400px;">
+						<img src="https://s3.us-east-2.amazonaws.com/rbsk/solid_blue_home_label.png" style="width:100%;">
 
 					</div>
 				</div>
 
 				<div class="col-md-4" style="height:100%;text-align:center;">
-					<div style="margin:20px;background:#fff;min-height:300px;">
-						<img src="https://s3.us-east-2.amazonaws.com/rbsk/images/press-release_banner.jpg" style="width:100%;">
+					<div style="margin:20px;background:#fff;min-height:400px;">
+					  <img src="https://s3.us-east-2.amazonaws.com/rbsk/solid_blue_home_label.png" style="width:100%;">
+					  <p>Meet our team of professionals.</p>
 					</div>
 				</div>
 
 				<div class="col-md-4" style="height:100%;text-align:center;">
-					<div style="margin:20px;background:#fff;min-height:300px;">
-						<img src="https://s3.us-east-2.amazonaws.com/rbsk/images/article_banner.jpg" style="width:100%;">
+					<div style="margin:20px;background:#fff;min-height:400px;">
+						<img src="https://s3.us-east-2.amazonaws.com/rbsk/solid_blue_home_label.png" style="width:100%;">
 
 					</div>
 				</div>
@@ -169,16 +174,18 @@ At RBSK Law Offices, our clients come first. With over 20 years of experience, o
 		<div class="row">
 			<div class="col-md-8">
 				<div style="padding:20px 40px;">
-				<h3 style="color:#000 !important;text-align:left;">How Can We Help?</h3>
+				<h3 style="color:#000 !important;text-align:left;">For Health Care Professionals</h3>
 				<p style="color:#000;font-size:16px;text-align:left;">
-In need of legal assistance? Look no further. Our team of dedicated employees are here to serve you every step of the way. From hospitals to new adults to seniors, we are well versed in guiding you through the challenges of addressing legal concerns. Whether you are looking for assistance with estate planning, real estate transactions or patient care concerns, RBSK Law and our team of dedicated staff is committed to assisting you.
+We understand that patient care is often improved by swift action at the courthouse. We are in probate courts throughout the Commonwealth, often on a weekly basis. When necessary, we have also represented our clients at the Massachusetts Appeals Court and Supreme Judicial Court. With over 20 years experience in providing patient care services we are confident in our ability to aid in obtaining surrogate decision makers for incapacitated patients. Our focus is facilitating coordinated care for patients and their health care providers by swiftly and effectively processing these cases.
 </p>
 				</div>
 				</div>
 
 			<div class="col-md-4">
 				<div style="padding:20px 40px;">
-				<div style="border:1px solid #ccc;height:200px;text-align:center;">Photo</div>
+				  <div style="border:1px solid #ccc;height:200px;text-align:center;">
+				    <img src="https://s3.us-east-2.amazonaws.com/rbsk/images/health_care_providers_people_we_serve_notext.jpeg" width="100%">
+				  </div>
 				</div>
 			</div>
 
@@ -193,13 +200,15 @@ In need of legal assistance? Look no further. Our team of dedicated employees ar
 
       <div class="col-md-4">
         <div style="padding:20px 40px;">
-        <div style="border:1px solid #ccc;height:200px;text-align:center;">A Photo</div>
+          <div style="border:1px solid #ccc;height:200px;text-align:center;">
+	    <img src="https://s3.us-east-2.amazonaws.com/rbsk/images/attorneys.jpg" width="100%">
+	  </div>
         </div>
       </div>
 
       <div class="col-md-8">
         <div style="padding:20px 40px;">
-        <h3 style="color:#000 !important;text-align:left;">Our Services</h3>
+        <h3 style="color:#000 !important;text-align:left;">For Attorneys</h3>
         <p style="color:#000;font-size:16px;text-align:left;">
 Seeking assistance with real estate, probate litigation, guardianship/conservatorship or fiduciary services? Our team of dedicated staff is there to cover any issues or concerns you may have. Read more about the services we provide to discover how we can best serve your needs.
 </p>
@@ -216,7 +225,7 @@ Seeking assistance with real estate, probate litigation, guardianship/conservato
     <div class="row">
       <div class="col-md-8">
         <div style="padding:20px 40px;">
-        <h3 style="color:#000 !important;text-align:left;">About Us</h3>
+        <h3 style="color:#000 !important;text-align:left;">Services for Individuals</h3>
         <p style="color:#000;font-size:16px;text-align:left;">
 Our clients are our first priority. As a team of attorneys, we are able to work collaboratively, together and with our clients, to determine the ideal legal strategy for each particular case. We seek to provide first-class counsel to individuals as well as organizations in areas including estate planning, family law, probate law, elder and disability law, and civil litigation, as well as providing fiduciary services and advice to closely held corporations. Engaging RBSK Law Offices for your legal needs provides you with a team of professionals who strive for excellence in each case
 </p>
@@ -225,7 +234,9 @@ Our clients are our first priority. As a team of attorneys, we are able to work 
 
       <div class="col-md-4">
         <div style="padding:20px 40px;">
-        <div style="border:1px solid #ccc;height:200px;text-align:center;">A Photo</div>
+          <div style="border:1px solid #ccc;height:200px;text-align:center;">
+	    <img src="https://s3.us-east-2.amazonaws.com/rbsk/images/your_family_people_we_serve.jpg" width="100%">
+	  </div>
         </div>
       </div>
 
@@ -240,15 +251,17 @@ Our clients are our first priority. As a team of attorneys, we are able to work 
 
       <div class="col-md-4">
         <div style="padding:20px 40px;">
-        <div style="border:1px solid #ccc;height:200px;text-align:center;">A Photo</div>
+          <div style="border:1px solid #ccc;height:200px;text-align:center;">
+	    <img src="https://s3.us-east-2.amazonaws.com/rbsk/images/service_members.jpg" width="100%">
+	  </div>
         </div>
       </div>
 
       <div class="col-md-8">
         <div style="padding:20px 40px;">
-        <h3 style="color:#000 !important;text-align:left;">How Can We Help?</h3>
+        <h3 style="color:#000 !important;text-align:left;">Helping Military Service Members</h3>
         <p style="color:#000;font-size:16px;text-align:left;">
-In need of legal assistance? Look no further. Our team of dedicated employees are here to serve you every step of the way. From hospitals to new adults to seniors, we are well versed in guiding you through the challenges of addressing legal concerns. Whether you are looking for assistance with estate planning, real estate transactions or patient care concerns, RBSK Law and our team of dedicated staff is committed to assisting you.
+We would like to say thank you to all of our current and former members of the armed forces for their service. We are forever grateful. We are pleased to offer a number of services including estate planning, real estate services, representation of your interests while on active duty and assistance with disabilities. Contact us for more information on how we can help.
 </p>
         </div>
         </div>
