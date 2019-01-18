@@ -10,3 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require lib/ie10-viewport-bug-workaround.js
+
+//=require lib/pusher.min
