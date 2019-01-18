@@ -5,7 +5,7 @@ stderr_path "#{root}/log/unicorn.log"
 stdout_path "#{root}/log/unicorn.log"
 
 listen '/tmp/unicorn.rbsk.sock', backlog: 64
-worker_processes Integer(ENV['WEB_CONCURRENCY'])
+worker_processes 8
 timeout 30
 
 preload_app true
