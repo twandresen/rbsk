@@ -10,7 +10,7 @@ gem 'mysql2', '>= 0.4.4', '< 0.6.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
-gem 'sass-rails' #, '~> 5.0'
+#gem 'sass-rails' #, '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -27,9 +27,6 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# browser gem detects browser info and mobile
-gem 'browser', '0.6.0'
-
 # content scrubber
 gem 'sanitize', '3.0.0'
 
@@ -37,8 +34,16 @@ gem 'sanitize', '3.0.0'
 gem 'oj' #, '~>2.8'
 
 # Use LESS for stylesheets
-#gem 'less-rails', '~> 2.8.0'
-gem 'less-rails-bootstrap'
+gem 'less-rails', '~> 2.8.0'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
+
+# browser gem detects browser info and mobile
+gem 'browser', '0.6.0'
+
+# content scrubber
+gem 'sanitize', '3.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
