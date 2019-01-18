@@ -37,6 +37,8 @@ gem 'less-rails', '~> 2.8.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
+gem 'sass-rails'
+
 # browser gem detects browser info and mobile
 gem 'browser', '0.6.0'
 
