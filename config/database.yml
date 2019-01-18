@@ -51,4 +51,4 @@ production:
   <<: *default
   database: rbsk_production
   username: rbsk
-  password: <%= ENV['RBSK_DATABASE_PASSWORD'] %>
+  password: rbsk
