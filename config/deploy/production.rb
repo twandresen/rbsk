@@ -8,7 +8,7 @@ set :rails_env, :production
 
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
-server "creativesoftwarema.com", user: "deploy", roles: %w{app db web}
+server "18.221.138.56", user: "deploy", roles: %w{app db web}
 
 
 
