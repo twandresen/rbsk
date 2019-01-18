@@ -2,6 +2,7 @@
 lock "~> 3.11.0"
 
 set :application, "rbsk"
+set :deploy_user, 'deploy'
 set :repo_url, "git@github.com:twandresen/rbsk.git"
 
 # Default branch is :master
@@ -10,7 +11,10 @@ set :repo_url, "git@github.com:twandresen/rbsk.git"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/www/rbsk"
 
-append :linked_files, "config/database.yml", "config/secrets.yml"
+set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
+set :rbenv_path, '/home/tom/.rbenv/'
+
+append :linked_files, "config/database.yml", "config/secrets.yml", "config/master.key"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 # Default value for :format is :airbrussh.
