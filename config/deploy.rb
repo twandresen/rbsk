@@ -8,6 +8,8 @@ set :repo_url, "git@github.com:twandresen/rbsk.git"
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
+##ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
+
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/www/rbsk"
 
@@ -16,6 +18,16 @@ set :rbenv_path, '/home/tom/.rbenv/'
 
 append :linked_files, "config/database.yml", "config/secrets.yml", "config/master.key"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+
+after 'deploy:publishing', 'deploy:restart'
+
+namespace :deploy do
+  task :restart do
+    #invoke 'unicorn:reload'
+  end
+end
+
+##set :passenger_restart_with_touch, false
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

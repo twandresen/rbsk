@@ -34,9 +34,6 @@ gem 'oj' #, '~>2.8'
 # Use LESS for stylesheets
 gem 'less-rails', '~> 2.8.0'
 
-# Use Uglifier as compressor for JavaScript assets
-#gem 'uglifier', '>= 1.3.0'
-
 # browser gem detects browser info and mobile
 gem 'browser', '0.6.0'
 
@@ -44,6 +41,9 @@ gem 'yarn'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 gem 'therubyracer', platforms: :ruby
+
+# Use unicorn as the app server
+gem 'unicorn'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -56,16 +56,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # deploy
 
-gem 'capistrano', '~> 3.7', '>= 3.7.1'
-gem 'capistrano-rails', '~> 1.2'
-gem 'capistrano-passenger', '~> 0.2.0'
-
-# Add this if you're using rbenv
-gem 'capistrano-rbenv', '~> 2.1'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-unicorn'
+
 end
 
 group :development do
