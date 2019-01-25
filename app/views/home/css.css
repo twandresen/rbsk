@@ -12501,7 +12501,7 @@ body.home.outplacement .section-1 .copy h3 {
 
 body.home.outplacement .section-1 .side-copy {
     position: absolute;
-    left: 0;
+    //left: 0;
     bottom: 50px;
     width: 45%;
     padding: 20px 40px;
