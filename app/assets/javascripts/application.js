@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require lib/ie10-viewport-bug-workaround.js
-
-//=require lib/pusher.min
+//= require jquery
+//= require jquery_ujs
+//= require twitter/bootstrap
+//= require activestorage
+//= require turbolinks
+//= require_tree .
