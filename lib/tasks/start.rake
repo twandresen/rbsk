@@ -4,7 +4,7 @@
 task "start" => :environment do
 
   # options...
-  port = ENV['RAILS_PORT'] || 3000
+  port = ENV['RAILS_PORT'] || 3003
 
   # Kill any running server process
   dir = File.dirname(File.expand_path(__FILE__ ))

@@ -21,8 +21,7 @@
     <title><%= content_for?(:browser_title) ? yield(:browser_title) + " | " : "" %>RBSK Law</title>
     <%= csp_meta_tag %>
 
-    <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-		<%= stylesheet_link_tag 'application' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
