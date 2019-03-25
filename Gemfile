@@ -5,12 +5,16 @@ ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
-# Use mysql as the database for Active Record
-gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 #gem 'sass-rails' #, '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
+
+# Use Uglifier as compressor for JavaScript assets
+gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
@@ -25,33 +29,23 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# content scrubber
-gem 'sanitize', '3.0.0'
+# Use ActiveStorage variant
+# gem 'mini_magick', '~> 4.8'
 
-# oj allows fast json rendering
-gem 'oj' #, '~>2.8'
+# js runtime
+gem "therubyracer"
 
-# Use LESS for stylesheets
-gem 'less-rails', '~> 2.8.0'
-
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-#gem 'sass-rails'
-
-# browser gem detects browser info and mobile
-gem 'browser', '0.6.0'
-
-gem 'yarn'
-
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+gem 'jquery-rails'  # If using Bootstrap's JS plugins.
+gem 'less-rails-bootstrap'
 
 # Use unicorn as the app server
 gem 'unicorn'
 
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+# Use mysql as the database for Active Record
+gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+
+# use less
+gem 'less-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
