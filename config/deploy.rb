@@ -2,28 +2,33 @@
 lock "~> 3.11.0"
 
 set :application, "rbsk"
-set :deploy_user, 'deploy'
 set :repo_url, "git@github.com:twandresen/rbsk.git"
+#set :deploy_user, 'deploy'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-##ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
+ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
+
+set :use_sudo, false
+set :bundle_binstubs, nil
+set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/www/rbsk"
+#set :deploy_to, "/home/deploy/www/rbsk"
 
-set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
-set :rbenv_path, '/home/tom/.rbenv/'
+#set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
+#set :rbenv_path, '/home/tom/.rbenv/'
 
-append :linked_files, "config/database.yml", "config/secrets.yml", "config/master.key"
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+#append :linked_files, "config/database.yml", "config/secrets.yml", "config/master.key"
+#append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 after 'deploy:publishing', 'deploy:restart'
 
 namespace :deploy do
   task :restart do
-    #invoke 'unicorn:reload'
+    invoke 'unicorn:reload'
   end
 end
 
