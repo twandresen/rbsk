@@ -3211,6 +3211,25 @@ textarea.input-lg,select[multiple].input-lg {
     border-color: #8ab13a;
 }
 
+.btn-primary-red-inverse {
+    color: #b5171d;
+    background-color: #fff;
+    border-color: #b5171d;
+    padding: 10px 40px 10px 40px;
+    font-size:16px;
+}
+
+.btn-primary-red-inverse:hover,.btn-primary-red-inverse:focus,.btn-primary-red-inverse:active,.btn-primary-red-inverse.active,.open > .dropdown-toggle.btn-primary-red-inverse {
+    color: #fff;
+    background-color: #e21f26;
+    border-color: #e21f26;
+}
+
+.btn-primary:active,.btn-primary.active,.open > .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+
 .btn-primary .badge {
     color: #428bca;
     background-color: #fff;
