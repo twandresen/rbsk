@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 	get "visual" => "home#visual"
 	get "services" => "home#services"
 	get "about" => "home#about"
+        get "kostin" => "home#kostin"
 	get "css" => "home#css"
 
 end
