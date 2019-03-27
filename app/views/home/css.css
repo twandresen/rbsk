@@ -1179,7 +1179,7 @@ input,button,select,textarea {
 }
 
 a {
-    color: #d22027;
+    color: #c89f42;
     text-decoration: none;
 }
 
@@ -3224,6 +3224,37 @@ textarea.input-lg,select[multiple].input-lg {
     background-color: #e21f26;
     border-color: #e21f26;
 }
+
+.btn-primary-gold-inverse {
+    color: #c89f42;
+    background-color: #fff;
+    border-color: #c89f42;
+    padding: 10px 40px 10px 40px;
+    font-size:16px;
+}
+
+.btn-primary-gold-inverse:hover,.btn-primary-gold-inverse:focus,.btn-primary-gold-inverse:active,.btn-primary-gold-inverse.active,.open > .dropdown-toggle.btn-primary-gold-inverse {
+    color: #fff;
+    background-color: #c89f42;
+    border-color: #c89f42;
+}
+
+
+.btn-primary-blue-inverse {
+    color: #193d7d;
+    background-color: #fff;
+    border-color: #193d7d;
+    padding: 10px 40px 10px 40px;
+    font-size:16px;
+}
+
+.btn-primary-blue-inverse:hover,.btn-primary-blue-inverse:focus,.btn-primary-blue-inverse:active,.btn-primary-blue-inverse.active,.open > .dropdown-toggle.btn-primary-blue-inverse {
+    color: #fff;
+    background-color: #193d7d;
+    border-color: #193d7d;
+}
+
+
 
 .btn-primary:active,.btn-primary.active,.open > .dropdown-toggle.btn-primary {
     background-image: none;
