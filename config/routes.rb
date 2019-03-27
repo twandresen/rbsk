@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 	get "services" => "home#services"
 	get "about" => "home#about"
         get "kostin" => "home#kostin"
+	get "about_gold" => "home#about_gold"
+        get "kostin_gold" => "home#kostin_gold"
 	get "css" => "home#css"
 
 end
