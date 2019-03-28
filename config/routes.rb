@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 	get "about" => "home#about"
         get "kostin" => "home#kostin"
 	get "about_gold" => "home#about_gold"
+        get "about_gold_horiz" => "home#about_gold_horiz"
         get "kostin_gold" => "home#kostin_gold"
 	get "css" => "home#css"
 
