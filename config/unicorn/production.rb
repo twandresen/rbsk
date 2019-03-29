@@ -1,14 +1,16 @@
 root = "/home/deploy/www/rbsk/current"
 working_directory root
+
 pid "#{root}/tmp/pids/unicorn.pid"
+
 stderr_path "#{root}/log/unicorn.log"
 stdout_path "#{root}/log/unicorn.log"
 
-listen '/tmp/unicorn.rbsk.sock', backlog: 64
 worker_processes 8
 timeout 30
-
 preload_app true
+
+listen '/tmp/unicorn.rbsk.sock', backlog: 64
 
 before_fork do |server, worker|
   Signal.trap 'TERM' do

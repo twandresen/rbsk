@@ -1,7 +1,3 @@
-set :stage, :production
-set :conditionally_migrate, true
-set :rails_env, :production
-
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -9,9 +5,29 @@ set :rails_env, :production
 
 # server "example.com", user: "deploy", roles: %w{app db web}, my_property: :my_value
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
-server "18.221.138.56", user: "deploy", roles: %w{app db web}
+#server "18.221.138.56", user: "deploy", roles: %w{app db web}
 
+set :port, 22
+set :user, 'deploy'
+set :deploy_via, :remote_cache
+set :use_sudo, false
 
+server '18.221.138.56',
+  roles: [:web, :app, :db],
+  port: fetch(:port),
+  user: fetch(:user),
+  primary: true
+
+set :deploy_to, "/home/#{fetch(:user)}/www/#{fetch(:application)}"
+
+set :ssh_options, {
+  forward_agent: true,
+  auth_methods: %w(publickey),
+  user: 'deploy',
+}
+
+set :rails_env, :production
+set :conditionally_migrate, true
 
 # role-based syntax
 # ==================
@@ -51,11 +67,11 @@ server "18.221.138.56", user: "deploy", roles: %w{app db web}
 #    auth_methods: %w(password)
 #  }
 
-set :ssh_options, {
-  forward_agent: true,
-  auth_methods: %w(publickey),
-  user: 'deploy',
-}
+#set :ssh_options, {
+#  forward_agent: true,
+#  auth_methods: %w(publickey),
+#  user: 'deploy',
+#}
 
 #
 # The server-based syntax can be used to override options:
