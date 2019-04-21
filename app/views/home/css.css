@@ -9388,12 +9388,12 @@ textarea.form-control {
 }
 
 .header .top-nav .navbar-nav > li > a:hover {
-    color: #a3c856;
+    color: #c89f42;
     background: transparent !important;
 }
 
 .header .top-nav .navbar-nav > li > a:hover:after {
-    border-bottom: solid 2px #a3c856;
+    border-bottom: solid 2px #c89f42;
 }
 
 .header .top-nav .navbar-nav > li > a .nav-icon {
@@ -9406,7 +9406,7 @@ textarea.form-control {
 }
 
 .header .top-nav .navbar-nav > li.active > a:after,.header .top-nav .navbar-nav > li.active > a:hover:after {
-    border-bottom: solid 2px #a3c856;
+    border-bottom: solid 2px #c89f42;
 }
 
 .header .top-nav .navbar-nav > li > a.last {
@@ -9433,7 +9433,7 @@ textarea.form-control {
 }
 
 .header .top-nav .navbar-nav ul > li > a:hover {
-    background: #a3c856;
+    background: #c89f42;
     color: #FFF !important;
 }
 
@@ -12742,7 +12742,7 @@ body.home.outplacement .section-4 .container .row .col-md-6 p {
 body.home.outplacement .section-4b {
     position: relative;
     z-index: 40;
-    background: transparent url(https://d31kswug2i6wp2.cloudfront.net/images/outplacement/home_section_5.jpg) no-repeat fixed center top;
+    background: transparent url(https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/terms_definitions_rbsk_law.jpg) no-repeat fixed center top;
     background-size: 100%;
     padding: 120px 0 120px 50%;
 }
@@ -13263,7 +13263,7 @@ body.home.outplacement .section-8 p a {
     }
 
     body.home.outplacement .section-4b {
-        background-color: #A3A4A6;
+        background-color: #eee;
         background-attachment: scroll;
         background-size: 100% auto;
         padding: 150px 0 0;
