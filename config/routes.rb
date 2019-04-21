@@ -14,4 +14,17 @@ Rails.application.routes.draw do
         get "kostin_gold" => "home#kostin_gold"
 	get "css" => "home#css"
 
+        # routing concerns
+        concern :homeable do
+          get "/" => "home#index"
+        end
+
+        
+        namespace :partners, path: "partners" do
+          concerns [:homeable]
+          resources :kostin, only: [:index]
+          resources :beaulieu, only: [:index]
+          resources :saunders, only: [:index]
+          resources :ready, only: [:index]
+        end
 end
