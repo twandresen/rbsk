@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 	get "about_gold" => "home#about_gold"
         get "about_gold_horiz" => "home#about_gold_horiz"
         get "kostin_gold" => "home#kostin_gold"
+        get "practices" => "home#practices"
 	get "css" => "home#css"
 
         # routing concerns
