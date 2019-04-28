@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Spectral|Cardo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Spectral|Cardo|Amiri" rel="stylesheet">
   
 <head>
 
@@ -8,8 +8,7 @@
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" media="screen" href="css.css" />
-
-    <link rel="stylesheet" href="css/hislide/jquery.hislide.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     
 <style>
 
@@ -34,7 +33,9 @@
   .services {
   width: 50%;
   float: left;
-  height: 1000px;
+  min-height: 800px;
+  height:auto;
+  overflow:auto;
   margin-bottom: -6px;
   color: #08152b;
   }
@@ -158,7 +159,7 @@
   //background: #efefef url(‘https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/bg_courthouse.jpg') cover;
   //background-size: cover;
   //opacity: 0.4;
-  background: linear-gradient(#efefef,#08152b);
+  background: linear-gradient(#efefef,#6895e3);
   }
   
   #services-offered:hover {
@@ -178,18 +179,48 @@
   opacity: 0.8;
   text-decoration: underline;
   }
+
+  .service-type > a {
+  font-size:21px;
+  color:#111;
+  font-family:Oswald;
+  }
+
+  .service-type > a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  color: #333;
+  }
   
   .service-description {
   margin-left:20px;
+  margin-right:30px;
   font-size:18px;
+  display:none;
   }
+
+  .service-group > a {
+  font-size:21px;
+  color:#fff;
+  font-family:Oswald;
+  }
+
+  .service-group > a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  color: #fff;
+  }
+
   
   #people-served {
   width: 50%;  
   float: left;
-  height: 1000px;
+  //height: 1000px;
+  min-height:800px;
+  height:auto;
+  overflow:auto;
   position: relative;
-  display: inline-block; 
+  display: block; 
   background: #08152b;
   margin-bottom: -6px;
   }
@@ -424,15 +455,6 @@ transition-delay:.5s;
 
 </style>
 
-<script type="text/javascript">
-$(document).ready(function() {
-  $('.slideshow').cycle({
-fx: 'curtainX',
-sync: false,
-delay: -2000
-  });
-});
-</script>
 
 </head>
 
@@ -514,7 +536,7 @@ delay: -2000
       </div>
 
       <div style="position:relative;font-family:Oswald;color:#08152b;margin-right:80px;padding-top:80px;text-align:right;">
-	<p style="font-size:28px;">Reliable.  Trustworthy.  Nimble.</p>
+	<p style="font-family:Amiri;font-size:32px;line-height:1.3em;text-transform:uppercase;">Reliable.  Dependable.  Trusted.</p>
 	<p style="font-size:21px;line-height:1.3em;">You can count on us to provide the services you need when you need them.</p>
       </div>
     </div>
@@ -525,66 +547,149 @@ delay: -2000
       <!--div style="width:50%;float:left;height:1000px;position:relative;display:inline-block;background:#c89f42;background-image:url('https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/bg_courthouse.jpg');background-size:cover;background-position:center right;opacity:0.4;margin-bottom:-6px;"></div-->
       <div id="services-offered" class="services">
 	<div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
-	  <p style="font-size:24px;text-transform:uppercase;">Services We Offer<br><br></p>
+	  <p style="font-size:28px;text-transform:uppercase;">Services We Offer<br><br></p>
 	  <p>
-	    <a href="javascript:void(0);" class="service-type">Civil Litigation</a>
-	  <div class="service-description">
-	    <p>Some content about civil litigation</p>
-	  </div>
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Civil Litigation</a>
+	      <div class="service-description">
+		<p>The attorneys of RBSK Law Offices have extensive experience handling civil litigation matters for individuals and organizations throughout Massachusetts. We have assisted in resolving disputes related to personal injury claims, real estate disputes, contract disputes and more.</p>
+		<p><a href="civil-litigation">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Estate Planning
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Estate Planning</a>
+	      <div class="service-description">
+		<p>We review existing estate plans and preparations of estate plans including wills, trusts, powers of attorney, health care proxy, living will, HIPPA release and real estate deeds. We also cover planning for long-term care and administration of an estate including probate of a will, probate of an estate without a will, simple estate administration, license to sell real estate, compromise a will, prepare estate accounts and closing an estate.</p>
+		<p><a href="estate-planning">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Fiduciary Services
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Fiduciary Services</a>
+	      <div class="service-description">
+		<p>We proudly cover service areas including trustee services, guardianship/conservatorship services, personal representative services, power of attorney services, health care agent services and escrow agent services.</p>
+		<p><a href="fiduciary-services">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Guardianship & Conservatorship
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Guardianship & Conservatorship</a>
+	      <div class="service-description">
+		<p>We cover a variety of guardianship and conservatorship services for both individuals and institutions. We have experience representing petitioners in contested matters as well as representing those objecting to petitions or accounts. Our experience working with numerous health care organizations in Massachusetts allows us to quickly provide you with services exactly when you need them most. </p>
+		<p><a href="guardianship">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Mental Health Litigation
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Mental Health Litigation</a>
+	      <div class="service-description">
+		<p>RBSK Law Offices is counsel to psychiatric facilities in civil commitment and guardianship matters throughout Eastern Massachusetts. The firm also serves as outside associate counsel to several medical facilities, including major tertiary care centers. We have unparalleled experience in all areas of mental health litigation, including statutory and regulatory interpretation, and complex evidentiary issues. </p>
+		<p><a href="mental-health">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Personal Injury
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Personal Injury</a>
+	      <div class="service-description">
+		<p>Serious personal injury or death of a loved one through an accident or other traumatic event is a devastating occurrence. We work with you and your family to help provide you with the support and guidance you need to achieve the appropriate resolution and compensation for your situation.</p>
+		<p><a href="personal-injury">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Probate Litigation
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Probate Litigation</a>
+	      <div class="service-description">
+		<p>Probate can be a complicated process and having the right attorney on your side can help ensure that the issues encountered can be addressed in a timely and fair manner. Our attorneys work on all matters related to estate disposition, trust establishment and enforcement and equity provisioning. Since probate often overlaps real estate, guardianship and healthy care proxy concerns, our attorneys have experience in those areas as well.</p>
+		<p><a href="probate">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Real Estate
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Real Estate</a>
+	      <div class="service-description">
+		<p>RBSK Law Offices is experienced in all areas related to real estate and has represented sellers as well as buyers from the initial purchase and sale through to the closing, always working to provide a smooth on-time closing. We are also available to provide services in fiduciary sales and in the case of land disputes or missing probate.</p>
+		<p><a href="real-estate">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Trusts
+	    <div class="service-type">
+	      <a href="javascript:void(0);">Trusts</a>
+	      <div class="service-description">
+		<p>We cover a variety of trust services including reviews of existing trusts as well as trust preparation services. We are also available to provide assistance with revisions to trusts as well as interpretation of ambiguous trusts. We work with attorneys as well as individuals on these cases.</p>
+		<p><a href="trusts">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	</div>
 
       </div>
 
 
-      <!--div style="width:50%;float:left;height:1000px;position:relative;display:inline-block;background:#c89f42;background-image:url('https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/bg_123.jpg');background-size:cover;opacity:0.8;margin-bottom:-6px;"></div-->
       <div id="people-served" class="people">
 	<div style="padding-left:60px;padding-right:60px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
-	  <p style="font-size:24px;text-transform:uppercase;">Who We Serve<br><br></p>
+	  <p style="font-size:28px;text-transform:uppercase;">Who We Serve<br><br></p>
 	  <p>
-	    <a href="javascript:void(0);" class="service-type">Attorneys</a>
-	  <div class="service-description">
-	    <p>We are experienced in handling cases involving will and trust disputes and have been retained by multiple attorneys for these complex issues. Our team is experienced in probate litigation, power of attorney documentation, guardianship, conservatorship, health care proxy documentation, trusts, real estate and other fiduciary services. Learn more</p>
-	  </div>
+	    <div class="service-group">
+	      <a href="javascript:void(0);">Attorneys</a>
+		 <div class="service-description">
+		   <p>We are experienced in handling cases involving will and trust disputes and have been retained by multiple attorneys for these complex issues. Our team is experienced in probate litigation, power of attorney documentation, guardianship, conservatorship, health care proxy documentation, trusts, real estate and other fiduciary services.</p>
+		   <p><a href="attorneys">Learn more...</a></p>
+		 </div>
+	    </div>
 	  </p>
 	  <p>
-	    Health Care Providers
+	    <div class="service-group">
+	      <a href="javascript:void(0);">Health Care Providers</a>
+	      <div class="service-description">
+		<p>We understand that patient care is often improved by swift action at the courthouse. We have 20+ years experience providing patient care services and the relationships throughout the Commonwealth to facilitate expeditious processing of patient care cases. Whether an emergency hearing is required for swift patient treatment or you are looking for assistance in providing legal services to your employees at a health care organization, we can provide you with the services you need.</p>
+		<p><a href="health-care-providers">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Families
+	    <div class="service-group">
+	      <a href="javascript:void(0);">Families</a>
+	      <div class="service-description">
+		<p>At RBSK Law Offices, we have families too. Like you, we want to protect our loved ones, improve our lives and perhaps try to leave something for the next generation. While the typical family does not need to have a lawyer on retainer, all families should consult with an attorney regarding several very important issues. We recommend that every adult consult a legal professional in key areas including Estate Planning, Real Estate Transactions and Preventative Steps to Protect Your Family.</p>
+		<p><a href="families">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    New Adults
+	    <div class="service-group">
+	      <a href="javascript:void(0);">New Adults</a>
+	      <div class="service-description">
+		<p>As a new adult you are now able to make some serious decisions. Being a grown-up can come with new rights as well as many new responsibilities. With these rights, it is now possible for you set your own rules for control of your health care treatment, finances and other relationships with individuals and organizations through contractual documents. Working with our firm can ensure that your rights are protected and that your interests are served.</p>
+		<p><a href="new-adults">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	  <p>
-	    Seniors
+	    <div class="service-group">
+	      <a href="javascript:void(0);">Seniors</a>
+	      <div class="service-description">
+		<p>At RBSK Law Offices we are committed to serving seniors in our community.  We understand that at this stage in life there can be many questions and concerns. Estate planning and gifting, real estate services and elder protective services are areas where we may be able to help you. We are also here to answer any general questions you may have about your life, health or property.</p>
+		<p><a href="seniors">Learn More...</a></p>
+	      </div>
+	    </div>	    
 	  </p>
 	  <p>
-	    Service Members
+	    <div class="service-group">
+	      <a href="javascript:void(0);">Service Members</a>
+	      <div class="service-description">
+		<p>First, we at RBSK Law Offices would like to say thank you to all of our current and former members of the armed forces for their service. We are forever grateful. We are pleased to offer a number of services including estate planning, real estate services, representation of your interests while on active duty and assistance with disabilities. </p>
+		<p><a href="service-members">Learn More...</a></p>
+	      </div>
+	    </div>
 	  </p>
 	</div>
 
@@ -597,60 +702,60 @@ delay: -2000
     </div>
     
     <div style="clear:both;"></div>
-
+    
     <div style="width:100%;background:#112a55;height:60px;"></div>
     
   </div>
-
- 
-
-<div style="width:100%;height:10px;background:#c89f42;">
-</div>
-
+  
+  
+  
+  <div style="width:100%;height:10px;background:#c89f42;">
+  </div>
+  
   <div class="footer-wrap">
-      <div class="footer-nav">
-        <div>
-          <h3><a href="about_gold">About RBSK Law</a></h3>
-          <div><a href="testimonials">Testimonials</a></div>
-          <div><a href="about_gold">Our People</a></div>
-          <div><a href="beaulieu">Matthew Beaulieu</a></div>
-          <div><a href="kostin_gold">Heidi Kostin</a></div>
-          <div><a href="ready">Richard Ready</a></div>
-          <div><a href="saunders">Brandon Saunders</a></div>
-        </div>
-        <div>
-          <h3><a href="practice">Who We Serve</a></h3>
-          <div><a href="practice/attorneys">Attorneys</a></div>
-          <div><a href="practice/health_care">Health Care Providers</a></div>
-          <div><a href="practice/families">Families</a></div>
-          <div><a href="practice/new_adults">New Adults</a></div>
-          <div><a href="practice/seniors">Seniors</a></div>
-          <div><a href="practice/service-members">Service Members</a></div>
-        </div>
-        <div>
-          <h3><a href="practice">Services We Provide</a></h3>
-          <div><a href="practice/real-estate">Real Estate</a></div>
-      		<div><%= link_to "Probate Litigation", root_path %></div>
-      		<div><%= link_to "Guardianship & Conservatorship", root_path %></div>
-      		<div><%= link_to "Trusts", root_path %></div>
-      		<div><%= link_to "Fiduciary Services", root_path %></div>
-      		<div><%= link_to "Personal Injury", root_path %></div>
-      		<div><%= link_to "Civil Litigation", root_path %></div>
-      		<div><%= link_to "Mental Health Litigation", root_path %></div>
-      		<div><%= link_to "Estate Planning & Elder Law", root_path %></div>
-        </div>
-        <div>
-          <h3><a href="contact">Contact Us</a></h3>
-      <div><%= link_to "Terms", root_path %></div>
-      <div><%= link_to "Definitions", root_path %></div>
-      <div><%= link_to "News & Updates", root_path %></div>
-        </div>
-
-
+    <div class="footer-nav">
+      <div>
+        <h3><a href="about_gold">About RBSK Law</a></h3>
+        <div><a href="testimonials">Testimonials</a></div>
+        <div><a href="about_gold">Our People</a></div>
+        <div><a href="beaulieu">Matthew Beaulieu</a></div>
+        <div><a href="kostin_gold">Heidi Kostin</a></div>
+        <div><a href="ready">Richard Ready</a></div>
+        <div><a href="saunders">Brandon Saunders</a></div>
       </div>
-
-
-      <div class="social-links">
+      <div>
+        <h3><a href="practice">Who We Serve</a></h3>
+        <div><a href="practice/attorneys">Attorneys</a></div>
+        <div><a href="practice/health_care">Health Care Providers</a></div>
+        <div><a href="practice/families">Families</a></div>
+        <div><a href="practice/new_adults">New Adults</a></div>
+        <div><a href="practice/seniors">Seniors</a></div>
+        <div><a href="practice/service-members">Service Members</a></div>
+        </div>
+      <div>
+        <h3><a href="practice">Services We Provide</a></h3>
+        <div><a href="practice/real-estate">Real Estate</a></div>
+      	<div><%= link_to "Probate Litigation", root_path %></div>
+      	<div><%= link_to "Guardianship & Conservatorship", root_path %></div>
+      	<div><%= link_to "Trusts", root_path %></div>
+      	<div><%= link_to "Fiduciary Services", root_path %></div>
+      	<div><%= link_to "Personal Injury", root_path %></div>
+      	<div><%= link_to "Civil Litigation", root_path %></div>
+      	<div><%= link_to "Mental Health Litigation", root_path %></div>
+      	<div><%= link_to "Estate Planning & Elder Law", root_path %></div>
+      </div>
+      <div>
+        <h3><a href="contact">Contact Us</a></h3>
+	<div><%= link_to "Terms", root_path %></div>
+	<div><%= link_to "Definitions", root_path %></div>
+	<div><%= link_to "News & Updates", root_path %></div>
+      </div>
+      
+      
+    </div>
+    
+    
+    <div class="social-links">
       <a href="https://twitter.com/rbsklaw" target="_blank">
         <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_tw.png" alt="Twitter"/>
       </a>
@@ -661,34 +766,38 @@ delay: -2000
         <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_li.png" alt="LinkedIn"/>
       </a>
     </div>
-
+    
     <div>
       &copy; 2019 RBSK Law  |  All rights reserved
     </div>
   </div>
+  
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
 
+    $("#slideshow > div:gt(0)").hide();
 
+    setInterval(function() { 
+    $('#slideshow > div:first')
+     .fadeOut(1000)
+     .next()
+     .fadeIn(1000)
+     .end()
+     .appendTo('#slideshow');
+    },  3000);
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
+    $(".service-type").click(function() {
+      $(this).children(".service-description").toggle("slow");
+    });  
+    $(".service-group").click(function() {
+      $(this).children(".service-description").toggle("slow");
+    });  
 
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000);
-
-$(".service-type").click(function(){
-    $(".service-description").show();
 });
 
-});
 </script>
 
 
