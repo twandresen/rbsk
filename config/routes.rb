@@ -13,6 +13,13 @@ Rails.application.routes.draw do
         get "about_gold_horiz" => "home#about_gold_horiz"
         get "kostin_gold" => "home#kostin_gold"
         get "practices" => "home#practices"
+        get "attorneys" => "home#attorneys"
+        get "health-care-providers" => "home#health-care-providers"
+        get "families" => "home#families"
+        get "new-adults" => "home#new-adults"
+        get "seniors" => "home#seniors"
+        get "service-members" => "home#service-members"
+        get "mental-health" => "home#mental-health"
 	get "css" => "home#css"
 
         # routing concerns
