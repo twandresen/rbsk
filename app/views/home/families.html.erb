@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Spectral|Cardo|Amiri" rel="stylesheet">
+  
+<head>
+
+    <title>RBSK Law</title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" media="screen" href="css.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+<style>
+  
+  .service-group {
+  width: 70%;
+  float: left;
+  //min-height: 800px;
+  height:auto;
+  padding-bottom:30px;
+  color: #08152b;
+  }
+
+  .service-group > p {
+  color: #08152b;
+  }
+  
+  .service-group > a {
+  font-size:21px;
+  color:#fff;
+  font-family:Oswald;
+  }
+
+  .service-group > a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  color: #fff;
+  }
+
+  .service-menu {
+  width: 30%;
+  float:left;
+  //background: linear-gradient(#193d7d,#fff);
+  background:#fff;
+  height:auto;
+  color:#000;
+  }
+  
+  .right-nav-heading {
+  padding-left:20px;
+  font-family: Oswald;
+  font-size:24px;
+  color:#c89f42;
+  }
+
+  .right-nav-item {
+  padding-left:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family:Oswald;
+  font-size:18px;
+  line-height:1.3em;
+  border-bottom: 1px solid #08152b;
+  }
+
+  .right-nav-item > a {
+  color: #08152b;
+  }
+
+  .right-nav-item > a:hover {
+  color: #193d7d;
+  opacity: 0.7;
+  }
+  
+  #services-offered {
+  background: linear-gradient(#efefef,#fff);
+  overflow:hidden;
+  width:70%;
+  }
+  
+
+  .header .top-nav .navbar-nav > li > a:hover {
+    padding: 10px 8px;
+    color: #c89f42;
+  }
+  .header .top-nav .navbar-nav > li.active > a:after, .header .top-nav .navbar-nav > li.active > a:hover:after {
+  border-bottom: solid 2px #c89f42 !important;
+  }
+  .top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
+  border-bottom: solid 2px #c89f42 !important;
+  }
+  .top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
+  border-bottom: solid 2px #c89f42 !important;
+  }
+  .header .top-nav .navbar-nav > li > a:hover:after {
+  border-bottom: solid 2px #c89f42;
+  }
+
+  .secondary-nav {
+  width:100%;
+  max-width:100%;
+  height: 80px;
+  padding-top: 14px;
+  text-align: left;
+  margin: 0px auto;
+  background: #c89f42;
+  border-bottom: 4px solid #c89f42;
+  box-shadow: inset 0px 0px 50px 20px #193d7d;
+  }
+  
+  .secondary-nav > p {
+  font-family: Oswald;
+  font-size: 32px;
+  color: #fff;
+  text-align: left;
+  margin-left: 60px;
+  }
+
+  .secondary-nav > p > a {
+  font-family: Oswald;
+  font-size: 32px;
+  color: #efefef;
+  text-align: left;
+  }
+
+  .secondary-nav > p > a:hover {
+  opacity: 0.8;
+  }
+
+  
+  .area-section {
+  font-size:24px;
+  font-family:Oswald;
+  color: #c89f42;
+  margin-top:20px;
+  }
+
+  .area-detail {
+  font-size:18px;
+  font-weight:normal;
+  font-family:Oswald;
+  color:#08152b;
+  }
+
+  .area-list {
+  font-size:16px;
+  font-weight:normal;
+  font-family:Oswald;
+  color:#08152b;
+  }
+
+  
+</style>
+
+
+</head>
+
+<body class="marketing-layout chrome_71 unknown chrome modern mac webkit visitor home outplacement en status-200">
+    
+  <!-- nav_employer_nogov_solutions_production_en: cached at: 2019-01-04 13:10:41 -0800 -->
+  <div class="header hidden-sm hidden-xs" style="text-align:center;height:140px !important;">
+    <div class="logo" style="float:left;">
+      <a href="/" data-action="Logo">
+        <%= link_to modern_path do %>
+        
+	<%= image_tag "https://s3.us-east-2.amazonaws.com/rbsk/logo_blue_gold_spiral_smoothed2.png", class: "", style: "margin-top:0px;height:152px;" %>
+        <% end %>
+      </a>
+    </div>
+    <div class="top-nav navbar" style="margin:0px auto;float:right;">
+      <ul class="nav navbar-nav ">
+          <li class=" " style="font-size:16px !important;text-transform:uppercase;"> <a href="modern">Home</a> </li>
+          <li class=" " style="font-size:16px !important;text-transform:uppercase;"> <a href="about_gold">Our People</a> </li>
+          <li class="active " style="font-size:16px !important;text-transform:uppercase;"> <a href="practice">Practice Areas</a> </li>
+          <li class=" " style="font-size:16px !important;text-transform:uppercase;"> <a href="contact">Contact</a> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end nav -->
+  
+  <nav class="navbar navbar-default navbar-fixed-top visible-sm-block visible-xs-block" role="navigation" style="z-index: 6000;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand" data-action="Logo">
+        <img alt="RBSK Law Offices" style="max-width:150px;" src="https://s3.us-east-2.amazonaws.com/rbsk/transparent-rbsk-law-logo-light-backgrounds.png" />
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div><!--/.nav-collapse -->
+  </nav>
+
+
+
+  <div style="width:100%;position:relative;display:block;margin-top:76px;height:auto;">
+    <div class="secondary-nav">
+      <p><a href="practices">Practice Areas</a></p>
+    </div>
+
+
+    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/your_family_people_we_serve.jpg');background-size:cover;background-position: 25% 20%;border-bottom:60px solid #112a55;">
+
+      <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:right;">
+	<div style="background:#333;opacity:0.7;padding-right:80px;padding-top:6px;padding-bottom:6px;">
+	  <p style="font-family:Oswald;font-size:32px;line-height:1.3em;">Your Family Is Important To You.<br>We Understand Because We Have Families Too.</p>
+	  </div>
+
+      </div>
+    </div>
+
+    <div style="clear:both;"></div>
+
+
+    <!--span class="circle"></span-->
+    <div style="width:100%">
+
+
+
+      <div id="services-offered" class="service-group">
+	<div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+	  <p style="font-size:28px;font-family:Amiri;color:#08152b;">We Are Here to Help You Protect Your Loved Ones<br><br></p>
+
+	  <div style="width:80%;">
+
+	    <p class="area-detail">The typical family does not need to have a lawyer on retainer but all families should consult with an attorney regarding several very important issues.<br><br>At RBSK Law Offices, we have families too. Like you, we want to protect our loved ones, improve our lives and perhaps try to leave something for the next generation.<br><br>To help do this we recommend that every adult consult with a legal professional in several key areas: Estate Planning, Real Estate Transactions, and Preventative Steps to Protect your Family.</p>
+	    <p class="area-section">Estate Planning</p>
+
+	    <p class="area-detail">Death is inevitable. We cannot know where and when it may occur but we can control, in many respects, how it will affect those you leave behind.  With proper planning, you can take steps to provide for the care of your spouse. You can leave a legacy to your children. You can ensure the care of minors. You can remember your favorite charity. A basic estate plan includes a Last Will and Testament.  An effective estate plan, however, must be personalized. Accordingly, before we begin to draft your plan, we will ask a number of questions about your current situation, your future goals and the people who form your family.  From there, we design a plan to meet your expectations, select the appropriate legal documents and explain how everything works.</p>
+	    <p class="area-detail">Estate Planning is not all about planning for the end. There may come a time when you lack capacity to make or communicate decisions. This could result from age, illness or injury. At such a time, you want to ensure that you have designated someone to make these decisions for you so that your needs are met and, as appropriate, to ensure that your loved ones are cared for and protected. This can be accomplished by executing certain key legal documents in advance of any personal setbacks. At a minimum, all adults should have a Health Care Proxy.</p>
+	    <p class="area-detail">Estate planning is not reserved for seniors. Any competent adult over the age of 18 can execute estate planning documents. Even new adults should have a Health Care Proxy.  In most cases parents will NOT have legal authority to make medical decisions for their adult children.  Often times, failing to adequately plan in advance can result in lengthy court proceedings which may not yield the desired results.</p>
+	    <p class="area-section">Protecting Your Family</p>
+	    <p class="area-detail">There are certain basic steps that members of every family should consider “just in case.”  In the event that a spouse or parent suffers an accident or illness, a Health Care Proxy will ensure that vital medical decisions can be made quickly. A Power of Attorney can be used to help a senior manage monthly bills. A declaration of Homestead can protect the equity in your home from many creditors. Trusts can help protect disabled children as they become adults. Limited Liability Companies can limit your risk of loss if you own rental property.  We recommend a “legal check-up” every few years to see whether you are doing everything you should to protect your family and your property.
+	    </p>
+	    <p class="area-detail">We also have experience helping to protect seniors who are being abused, neglected, or financially exploited.  We can help assess the problem, assist in obtaining physical protection, secure the appointment of surrogate decision makers where necessary and make efforts to recover assets.
+</p>
+
+	    <p class="area-section">Real Estate</p>
+	    <p class="area-detail">We have a number of years of experience in handling the legal issues related to real estate. We have represented buyers, sellers and financial institutions.</p>
+	    <p class="area-detail">We can help you negotiate a purchase and sales agreement, address title issues, and prepare or review closing documents.</p>
+	    <p class="area-detail">We also have extensive knowledge of real estate in the probate arena.  If you inherited a house, inherited a share of a house or have an interest in a house held in trust or in common with another individual, we can help you understand your rights and guide you toward a viable resolution.</p>
+
+	  </div>
+
+
+	</div>
+
+      </div>
+
+	
+      <div class="service-menu">
+	<div style="margin-top:60px;">
+	  <p class="right-nav-heading">Who We Serve</p>
+	  <p class="right-nav-item"><a href="attorneys">Attorneys</a></p>
+	  <p class="right-nav-item"><a href="health-care-providers">Health Care Providers</a></p>
+	  <p class="right-nav-item"><a href="families">Families</a></p>
+	  <p class="right-nav-item"><a href="new-adults">New Adults</a></p>
+	  <p class="right-nav-item"><a href="seniors">Seniors</a></p>
+	  <p class="right-nav-item"><a href="service-members">Service Members</a></p>
+	</div>
+      </div>
+
+
+    </div>
+    
+    <div style="clear:both;"></div>
+    
+    <div style="width:100%;background:#112a55;height:60px;"></div>
+    
+  </div>
+  
+  
+  
+  <div style="width:100%;height:10px;background:#c89f42;">
+  </div>
+  
+  <div class="footer-wrap">
+    <div class="footer-nav">
+      <div>
+        <h3><a href="about_gold">About RBSK Law</a></h3>
+        <div><a href="testimonials">Testimonials</a></div>
+        <div><a href="about_gold">Our People</a></div>
+        <div><a href="beaulieu">Matthew Beaulieu</a></div>
+        <div><a href="kostin_gold">Heidi Kostin</a></div>
+        <div><a href="ready">Richard Ready</a></div>
+        <div><a href="saunders">Brandon Saunders</a></div>
+      </div>
+      <div>
+        <h3><a href="practice">Who We Serve</a></h3>
+        <div><a href="practice/attorneys">Attorneys</a></div>
+        <div><a href="practice/health_care">Health Care Providers</a></div>
+        <div><a href="practice/families">Families</a></div>
+        <div><a href="practice/new_adults">New Adults</a></div>
+        <div><a href="practice/seniors">Seniors</a></div>
+        <div><a href="practice/service-members">Service Members</a></div>
+        </div>
+      <div>
+        <h3><a href="practice">Services We Provide</a></h3>
+        <div><a href="practice/real-estate">Real Estate</a></div>
+      	<div><%= link_to "Probate Litigation", root_path %></div>
+      	<div><%= link_to "Guardianship & Conservatorship", root_path %></div>
+      	<div><%= link_to "Trusts", root_path %></div>
+      	<div><%= link_to "Fiduciary Services", root_path %></div>
+      	<div><%= link_to "Personal Injury", root_path %></div>
+      	<div><%= link_to "Civil Litigation", root_path %></div>
+      	<div><%= link_to "Mental Health Litigation", root_path %></div>
+      	<div><%= link_to "Estate Planning & Elder Law", root_path %></div>
+      </div>
+      <div>
+        <h3><a href="contact">Contact Us</a></h3>
+	<div><%= link_to "Terms", root_path %></div>
+	<div><%= link_to "Definitions", root_path %></div>
+	<div><%= link_to "News & Updates", root_path %></div>
+      </div>
+      
+      
+    </div>
+    
+    
+    <div class="social-links">
+      <a href="https://twitter.com/rbsklaw" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_tw.png" alt="Twitter"/>
+      </a>
+      <a href="https://www.facebook.com/RBSK_LawOffices" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_fb.png" alt="Facebook"/>
+      </a>
+      <a href="https://www.linkedin.com/company/RBSK_Law_Offices" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_li.png" alt="LinkedIn"/>
+      </a>
+    </div>
+    
+    <div>
+      &copy; 2019 RBSK Law  |  All rights reserved
+    </div>
+  </div>
+  
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+    $(".service-type").click(function() {
+      $(this).children(".service-description").toggle("slow");
+    });  
+    $(".service-group").click(function() {
+      $(this).children(".service-description").toggle("slow");
+    });  
+
+});
+
+</script>
+
+
+
+</body>
+</html>
+
