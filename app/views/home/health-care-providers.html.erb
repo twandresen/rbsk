@@ -12,28 +12,11 @@
     
 <style>
   
-  .services {
-  width: 100%;
-  float: left;
-  min-height: 800px;
-  height:auto;
-  overflow:auto;
-  margin-bottom: -6px;
-  padding-bottom:30px;
-  color: #08152b;
-  }
-
-  .services > p {
-  color: #08152b;
-  }
-
   .service-group {
-  width: 100%;
+  width: 70%;
   float: left;
-  min-height: 800px;
+  //min-height: 800px;
   height:auto;
-  overflow:auto;
-  margin-bottom: -6px;
   padding-bottom:30px;
   color: #08152b;
   }
@@ -42,75 +25,6 @@
   color: #08152b;
   }
   
-  
-  .service-content:hover {
-  //background: #08152b;
-  }
-  
-  .services-content > p {
-  color: #08152b;
-  }
-
-  .services-content > p > a {
-  color: #08152b;
-  }
-
-  .services-content:hover > p {
-  //color: #fff;
-  }
-
-  .services-content:hover > p > a {
-  //color: #fff;
-  }
-
-  .services-content > p > a:hover, .services-content:hover > p > a:hover {
-  opacity: 0.8;
-  }
-
-  .services:hover, .services:after, .services:hover:after {
-  //background-color: #08152b;
-  }
-
-  .services:hover > p > a {
-  //color: #fff;
-  }
-
-  .services:hover > p > a:hover {
-  opacity: 0.8;
-  }
-  
-  .services > p > a {
-  color: #08152b;
-  }
-
-  .services > p > a:hover {
-  opacity: 0.8;
-  }
-
-  .services > p > a:hover {
-  //color: #fff;
-  text-decoration: underline;
-  }
-
-  .service-type > a {
-  font-size:21px;
-  color:#111;
-  font-family:Oswald;
-  }
-
-  .service-type > a:hover {
-  text-decoration: underline;
-  opacity: 0.7;
-  color: #333;
-  }
-  
-  .service-description {
-  margin-left:20px;
-  margin-right:30px;
-  font-size:18px;
-  display:none;
-  }
-
   .service-group > a {
   font-size:21px;
   color:#fff;
@@ -123,11 +37,45 @@
   color: #fff;
   }
 
-    #services-offered {
-  //background: #efefef url(‘https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/bg_courthouse.jpg') cover;
-  //background-size: cover;
-  //opacity: 0.4;
+  .service-menu {
+  width: 30%;
+  float:left;
+  //background: linear-gradient(#193d7d,#fff);
+  background:#fff;
+  height:auto;
+  color:#000;
+  }
+  
+  .right-nav-heading {
+  padding-left:20px;
+  font-family: Oswald;
+  font-size:24px;
+  color:#c89f42;
+  }
+
+  .right-nav-item {
+  padding-left:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-family:Oswald;
+  font-size:18px;
+  line-height:1.3em;
+  border-bottom: 1px solid #08152b;
+  }
+
+  .right-nav-item > a {
+  color: #08152b;
+  }
+
+  .right-nav-item > a:hover {
+  color: #193d7d;
+  opacity: 0.7;
+  }
+  
+  #services-offered {
   background: linear-gradient(#efefef,#fff);
+  overflow:hidden;
+  width:70%;
   }
   
 
@@ -297,6 +245,19 @@
 
 	</div>
 
+      </div>
+
+	
+      <div class="service-menu">
+	<div style="margin-top:60px;">
+	  <p class="right-nav-heading">Who We Serve</p>
+	  <p class="right-nav-item"><a href="attorneys">Attorneys</a></p>
+	  <p class="right-nav-item"><a href="health-care-providers">Health Care Providers</a></p>
+	  <p class="right-nav-item"><a href="families">Families</a></p>
+	  <p class="right-nav-item"><a href="new-adults">New Adults</a></p>
+	  <p class="right-nav-item"><a href="seniors">Seniors</a></p>
+	  <p class="right-nav-item"><a href="service-members">Service Members</a></p>
+	</div>
       </div>
 
 
