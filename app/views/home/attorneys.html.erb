@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Spectral|Cardo|Amiri" rel="stylesheet">
+  
+<head>
+
+    <title>RBSK Law</title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" media="screen" href="css.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+<style>
+  
+  .services {
+  width: 100%;
+  float: left;
+  min-height: 800px;
+  height:auto;
+  overflow:auto;
+  margin-bottom: -6px;
+  padding-bottom:30px;
+  color: #08152b;
+  }
+
+  .services > p {
+  color: #08152b;
+  }
+
+  .service-group {
+  width: 100%;
+  float: left;
+  min-height: 800px;
+  height:auto;
+  overflow:auto;
+  margin-bottom: -6px;
+  padding-bottom:30px;
+  color: #08152b;
+  }
+
+  .service-group > p {
+  color: #08152b;
+  }
+  
+  
+  .service-content:hover {
+  //background: #08152b;
+  }
+  
+  .services-content > p {
+  color: #08152b;
+  }
+
+  .services-content > p > a {
+  color: #08152b;
+  }
+
+  .services-content:hover > p {
+  //color: #fff;
+  }
+
+  .services-content:hover > p > a {
+  //color: #fff;
+  }
+
+  .services-content > p > a:hover, .services-content:hover > p > a:hover {
+  opacity: 0.8;
+  }
+
+  .services:hover, .services:after, .services:hover:after {
+  //background-color: #08152b;
+  }
+
+  .services:hover > p > a {
+  //color: #fff;
+  }
+
+  .services:hover > p > a:hover {
+  opacity: 0.8;
+  }
+  
+  .services > p > a {
+  color: #08152b;
+  }
+
+  .services > p > a:hover {
+  opacity: 0.8;
+  }
+
+  .services > p > a:hover {
+  //color: #fff;
+  text-decoration: underline;
+  }
+
+  .service-type > a {
+  font-size:21px;
+  color:#111;
+  font-family:Oswald;
+  }
+
+  .service-type > a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  color: #333;
+  }
+  
+  .service-description {
+  margin-left:20px;
+  margin-right:30px;
+  font-size:18px;
+  display:none;
+  }
+
+  .service-group > a {
+  font-size:21px;
+  color:#fff;
+  font-family:Oswald;
+  }
+
+  .service-group > a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+  color: #fff;
+  }
+
+    #services-offered {
+  //background: #efefef url(‘https://s3.us-east-2.amazonaws.com/rbsk/backgrounds/bg_courthouse.jpg') cover;
+  //background-size: cover;
+  //opacity: 0.4;
+  background: linear-gradient(#efefef,#fff);
+  }
+  
+  .header .top-nav .navbar-nav > li > a:hover {
+    padding: 10px 8px;
+    color: #c89f42;
+  }
+  .header .top-nav .navbar-nav > li.active > a:after, .header .top-nav .navbar-nav > li.active > a:hover:after {
+  border-bottom: solid 2px #c89f42 !important;
+  }
+  .top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
+  border-bottom: solid 2px #c89f42 !important;
+  }
+  .top-nav .navbar-nav > li.active > a:after, .top-nav .navbar-nav > li.active > a:hover:after {
+  border-bottom: solid 2px #c89f42 !important;
+  }
+  .header .top-nav .navbar-nav > li > a:hover:after {
+  border-bottom: solid 2px #c89f42;
+  }
+  
+  .secondary-nav {
+  width:100%;
+  max-width:100%;
+  height: 80px;
+  padding-top: 14px;
+  text-align: left;
+  margin: 0px auto;
+  background: #c89f42;
+  border-bottom: 4px solid #c89f42;
+  box-shadow: inset 0px 0px 50px 20px #193d7d;
+  }
+
+  .secondary-nav > p {
+  font-family: Oswald;
+  font-size: 32px;
+  color: #fff;
+  text-align: left;
+  margin-left: 60px;
+  }
+
+  .secondary-nav > p > a {
+  font-family: Oswald;
+  font-size: 32px;
+  color: #efefef;
+  text-align: left;
+  }
+
+  .secondary-nav > p > a:hover {
+  opacity: 0.8;
+  }
+
+  
+  .area-section {
+  font-size:24px;
+  font-family:Oswald;
+  color:#c89f42;
+  margin-top:20px;
+  }
+
+  .area-detail {
+  font-size:18px;
+  font-weight:normal;
+  font-family:Oswald;
+  color:#08152b;
+  }
+
+  .area-list {
+  font-size:16px;
+  font-weight:normal;
+  font-family:Oswald;
+  color:#08152b;
+  }
+
+  
+</style>
+
+
+</head>
+
+<body class="marketing-layout chrome_71 unknown chrome modern mac webkit visitor home outplacement en status-200">
+    
+  <!-- nav_employer_nogov_solutions_production_en: cached at: 2019-01-04 13:10:41 -0800 -->
+  <div class="header hidden-sm hidden-xs" style="text-align:center;height:140px !important;">
+    <div class="logo" style="float:left;">
+      <a href="/" data-action="Logo">
+        <%= link_to modern_path do %>
+        
+	<%= image_tag "https://s3.us-east-2.amazonaws.com/rbsk/logo_blue_gold_spiral_smoothed2.png", class: "", style: "margin-top:0px;height:152px;" %>
+        <% end %>
+      </a>
+    </div>
+    <div class="top-nav navbar" style="margin:0px auto;float:right;">
+      <ul class="nav navbar-nav ">
+          <li class=" " style="font-size:16px !important;text-transform:uppercase;"> <a href="modern">Home</a> </li>
+          <li class=" " style="font-size:16px !important;text-transform:uppercase;"> <a href="about_gold">Our People</a> </li>
+          <li class="active " style="font-size:16px !important;text-transform:uppercase;"> <a href="practice">Practice Areas</a> </li>
+          <li class=" " style="font-size:16px !important;text-transform:uppercase;"> <a href="contact">Contact</a> </li>
+      </ul>
+    </div>
+  </div>
+  <!-- end nav -->
+  
+  <nav class="navbar navbar-default navbar-fixed-top visible-sm-block visible-xs-block" role="navigation" style="z-index: 6000;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand" data-action="Logo">
+        <img alt="RBSK Law Offices" style="max-width:150px;" src="https://s3.us-east-2.amazonaws.com/rbsk/transparent-rbsk-law-logo-light-backgrounds.png" />
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+      </ul>
+    </div><!--/.nav-collapse -->
+  </nav>
+
+
+
+  <div style="width:100%;position:relative;display:block;margin-top:76px;height:auto;">
+    <div class="secondary-nav">
+      <p><a href="practices">Practice Areas</a></p>
+    </div>
+
+
+    <div style="width:100%;height:460px;background: url('https://s3.us-east-2.amazonaws.com/rbsk/images/attorneys2.jpg');background-size:cover;border-bottom:60px solid #112a55;">
+
+      <div style="width:100%;font-family:Oswald;color:#fff;padding-right:0px;padding-top:180px;text-align:right;">
+	<div style="background:#333;opacity:0.7;padding-right:80px;padding-top:6px;padding-bottom:6px;">
+	  <p style="font-family:Oswald;font-size:32px;line-height:1.3em;">You Are An Attorney.<br>Why Should You Hire Us?</p>
+	  </div>
+
+      </div>
+    </div>
+
+    <div style="clear:both;"></div>
+
+
+    <!--span class="circle"></span-->
+    <div style="width:100%">
+
+
+
+      <div id="services-offered" class="service-group">
+	<div style="padding-left:100px;padding-top:60px;font-family:Oswald;font-size:21px;line-height:1.6em;">
+	  <p style="font-size:28px;font-family:Amiri;color:#08152b;">When Complex Issues Arise, We Can Help<br><br></p>
+
+	  <div style="width:80%;color:#08152b;">
+	    <p class="area-section">Experience in Probate</p>
+
+	    <p class="area-detail">We process hundreds of Guardianship/Conservatorship/Health care proxy cases a year. We have handled cases involving seniors with dementia, premature infants, mentally ill individuals, individuals with developmental delays, individuals requiring emergency surgeries, individuals requiring amputations, patients with unborn children, patients objecting to care on religious grounds, patients with tendencies towards violence, end of life issues, patients with difficult family members, victims of elder abuse, and victims of financial exploitation. As necessary we have represented our clients at the Massachusetts Appeals Court and Supreme Judicial Court.</p>
+	    <p class="area-detail">Many cases involving real estate/probate intersect including: licenses to sell, petitions to partition, equitable proceedings. Our attorneys have years of experience handling cases involving will and trust disputes. We have been retained by multiple attorneys for complex probate matters and are skilled in these matters as well as providing other fiduciary services.</p>
+	    <p class="area-section">Power of Attorney</p>
+
+	    <p class="area-detail">A Power of Attorney is a legal document you can use to designate someone (an Attorney‐in‐Fact) to make financial and property decisions for you. The document must be executed in accordance with the requirements of state law. A Power of Attorney is a versatile document. It may be broad, covering all areas of interest or limited to a specific event, relationship or transaction. It may be limited in time. It may become effective only under certain specified conditions.These are decisions that we can assist you in understanding and documenting to protect your interests.</p>
+	    <p class="area-detail">You should consider executing a general power of attorney designating an attorney‐in‐fact to act on your behalf in the event that you are unable to make or communicate decisions on your own due to injury or illness. In most cases, your spouse, parents, adult children and next of kin, will have no legal right or authority to make financial decisions for you if you cannot make them yourself. Banks, credit card companies and utility providers will often refuse to even talk about your affairs with those who care about you. By executing a Power of Attorney, you will ensure that your bills will continue to be paid, your loved ones will be cared for, and your assets will be protected.</p>
+	    <p class="area-section">Guardianship & Conservatorship</p>
+	    <p class="area-detail">A guardian is an individual appointed by the Court to make medical and health care related decisions for an individual who is unable to make or communicate informed decisions.</p>
+	    <p class="area-detail">A conservator is an individual appointed by the Court to manage property, financial and business affairs of an individual who is unable to make or communicate informed decisions or who is detained or otherwise unable to return to the United States.</p>
+	    <p class="area-detail">We have many years of experience in handling guardianship and conservatorship cases and work with many of the healthcare organizations in the state of Massachusetts to assist on these cases. </p>
+	    <p class="area-section">Health Care Proxy</p>
+	    <p class="area-detail">A Health Care Proxy is a legal document you can use to designate someone (a Health Care Agent) to make medical decisions for you in the event that you are unable to make or communicate decisions on your own. The document must be executed in accordance with the requirements of state law.</p>
+	    <p class="area-detail">The Health Care Agent’s decision making authority will not begin unless your attending physician makes a written determination that you lack capacity. Once this happens, your Health Care Agent will be able to make all of the healthcare related decisions that you would be able to make yourself.</p>
+	    <p class="area-section">Trusts</p>
+	    <p class="area-detail">We review existing trusts as well as preparation of trusts including, estate planning trusts, testamentary trusts, supplemental needs trusts, real estate trusts, revocable trusts and irrevocable trusts. Additional services we offer are revisions of amendments to existing trusts, assistance with trust accounting, assistance with changes in trustees and termination of existing trusts. We also handle court petitions to interpret ambiguous trusts, reform or change trusts, enforce provisions of a trust, remove an unsuitable trustee, demand a trust account and/or challenge a trustees account.</p>
+	    <p class="area-section">Probate Litigation</p>
+	    <p class="area-detail">Our team has experience in all components of probate litigation. We work with numerous clients each year to handle issues related to estates, real estate, trusts and equity. There are times when the probate process can become complicated and lengthy and we are here to assist you each step of the way. </p>
+	    <p class="area-detail">There are many issues that can arise when dealing with estates and an experienced attorney is essential when navigating these concerns. Some of the areas in which we have experience include:</p>
+	    <p class="area-detail">
+	      <ul class="area-list">
+		<li>Probate of an Estate</li>
+		<li>Challenge or Defend a Will</li>
+		<li>Challenge or Defend the appointment of a Personal Representative</li>
+		<li>Matters related to the sale of Estate Real Estate or other property</li>
+		<li>Demands for Accounts</li>
+		<li>Objections to Accounts</li>
+		<li>Breach of Fiduciary Duty</li>
+		<li>Petitions for Instructions</li>
+		<li>Petitions to Compromise a Will</li>
+		<li>Insolvent Estates</li>
+		<li>Civil suits involving estates</li>
+		<li>Claims against the Estate</li>
+		<li>Allowance of Estate Accounts</li>
+		<li>Closing an Estate/Full and Complete Settlement</li>
+	      </ul>
+	    </p>
+	    <p class="area-detail">Real Estate also has its own intricacies where the guidance of an experienced attorney can simplify and speed the process. Areas where we have experience include:</p>
+	    <p class="area-detail">
+	      <ul class="area-list">
+		<li>Personal Representatives Sale of Real Estate</li>
+		<li>Conservators Sale of Real Estate</li>
+		<li>Trustees Sale of Real Estate</li>
+		<li>Petition to Partition</li>
+	      </ul>
+	    </p>
+	    <p class="area-detail">We handle numerous trust related cases on an annual basis and have experience with even the most complicated situations. Some of the areas where we have experience include:</p>
+	    <p class="area-detail">
+	      <ul class="area-list">
+		<li>Petitions to modify or reform trusts</li>
+		<li>Petitions for instructions</li>
+		<li>Petitions to enforce trust provisions</li>
+		<li>Petitions to remove a trustee</li>
+		<li>Petitions to terminate trusts</li>
+		<li>Demand for Trustees Accounts</li>
+		<li>Objections to Trustees Accounts</li>
+		<li>Breach of Fiduciary Duty</li>
+		<li>Constructive Trusts</li>
+		<li>Resulting Trusts</li>
+	      </ul>
+	    </p>
+	    <p class="area-detail">Equity related issues can arise in both personal and business matters and we have experience with many issues related to equity law including:</p>
+	    <p class="area-detail">
+	      <ul class="area-list">
+		<li>Actions to recover certain assets</li>
+		<li>Matters related to the ownership of certain assets</li>
+		<li>Civil claims for specific performance</li>
+		<li>Petition to Partition real estate</li>
+		<li>Declaratory Judgments</li>
+	      </ul>
+	    </p>
+
+	  </div>
+
+
+	</div>
+
+      </div>
+
+
+    </div>
+    
+    <div style="clear:both;"></div>
+    
+    <div style="width:100%;background:#112a55;height:60px;"></div>
+    
+  </div>
+  
+  
+  
+  <div style="width:100%;height:10px;background:#c89f42;">
+  </div>
+  
+  <div class="footer-wrap">
+    <div class="footer-nav">
+      <div>
+        <h3><a href="about_gold">About RBSK Law</a></h3>
+        <div><a href="testimonials">Testimonials</a></div>
+        <div><a href="about_gold">Our People</a></div>
+        <div><a href="beaulieu">Matthew Beaulieu</a></div>
+        <div><a href="kostin_gold">Heidi Kostin</a></div>
+        <div><a href="ready">Richard Ready</a></div>
+        <div><a href="saunders">Brandon Saunders</a></div>
+      </div>
+      <div>
+        <h3><a href="practice">Who We Serve</a></h3>
+        <div><a href="practice/attorneys">Attorneys</a></div>
+        <div><a href="practice/health_care">Health Care Providers</a></div>
+        <div><a href="practice/families">Families</a></div>
+        <div><a href="practice/new_adults">New Adults</a></div>
+        <div><a href="practice/seniors">Seniors</a></div>
+        <div><a href="practice/service-members">Service Members</a></div>
+        </div>
+      <div>
+        <h3><a href="practice">Services We Provide</a></h3>
+        <div><a href="practice/real-estate">Real Estate</a></div>
+      	<div><%= link_to "Probate Litigation", root_path %></div>
+      	<div><%= link_to "Guardianship & Conservatorship", root_path %></div>
+      	<div><%= link_to "Trusts", root_path %></div>
+      	<div><%= link_to "Fiduciary Services", root_path %></div>
+      	<div><%= link_to "Personal Injury", root_path %></div>
+      	<div><%= link_to "Civil Litigation", root_path %></div>
+      	<div><%= link_to "Mental Health Litigation", root_path %></div>
+      	<div><%= link_to "Estate Planning & Elder Law", root_path %></div>
+      </div>
+      <div>
+        <h3><a href="contact">Contact Us</a></h3>
+	<div><%= link_to "Terms", root_path %></div>
+	<div><%= link_to "Definitions", root_path %></div>
+	<div><%= link_to "News & Updates", root_path %></div>
+      </div>
+      
+      
+    </div>
+    
+    
+    <div class="social-links">
+      <a href="https://twitter.com/rbsklaw" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_tw.png" alt="Twitter"/>
+      </a>
+      <a href="https://www.facebook.com/RBSK_LawOffices" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_fb.png" alt="Facebook"/>
+      </a>
+      <a href="https://www.linkedin.com/company/RBSK_Law_Offices" target="_blank">
+        <img src="https://d31kswug2i6wp2.cloudfront.net/images/icon_social_li.png" alt="LinkedIn"/>
+      </a>
+    </div>
+    
+    <div>
+      &copy; 2019 RBSK Law  |  All rights reserved
+    </div>
+  </div>
+  
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+    $(".service-type").click(function() {
+      $(this).children(".service-description").toggle("slow");
+    });  
+    $(".service-group").click(function() {
+      $(this).children(".service-description").toggle("slow");
+    });  
+
+});
+
+</script>
+
+
+
+</body>
+</html>
+
