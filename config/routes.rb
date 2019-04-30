@@ -19,6 +19,7 @@ Rails.application.routes.draw do
         get "new-adults" => "home#new-adults"
         get "seniors" => "home#seniors"
         get "service-members" => "home#service-members"
+        get "estate-planning" => "home#estate-planning"
         get "mental-health" => "home#mental-health"
 	get "css" => "home#css"
 
