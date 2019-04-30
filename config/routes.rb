@@ -20,7 +20,11 @@ Rails.application.routes.draw do
         get "seniors" => "home#seniors"
         get "service-members" => "home#service-members"
         get "estate-planning" => "home#estate-planning"
+        get "guardianship" => "home#guardianship"
         get "mental-health" => "home#mental-health"
+        get "probate-litigation" => "home#probate-litigation"
+        get "real-estate" => "home#real-estate"
+        get "trusts" => "home#trusts"
 	get "css" => "home#css"
 
         # routing concerns
